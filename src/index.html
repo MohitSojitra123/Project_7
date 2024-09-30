@@ -1,0 +1,549 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+</head>
+
+<style>
+    .body{
+        background-color: white;
+    }
+
+    .h111{
+        color: black;
+    }
+
+    .border111{
+        border-bottom: 2px solid gray;
+    }
+    .border112{
+        border: 1px solid gray;
+    }
+    .border500{
+        border: 2px solid gray;
+    }
+
+    .sec111{
+        background-color: #c7d5e4;
+    }
+
+    .sec_bg11{
+        background-color: #edece4;
+    }
+
+    .sec_color11{
+        background-color: azure;
+    }
+</style>
+
+<!-- jquery -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<!-- jquery -->
+
+<!-- Link -->
+<!-- https://www.figma.com/design/7RxksBzPw2Ndw3snPzlXvy/Bitcloud---Crypto-exchange-kit?node-id=3123-194659&t=c1St8SyPvN6Igh0i-0 -->
+<!-- Link -->
+
+<!-- Remix Icon -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- Remix Icon -->
+
+<body class="bg-[#141416]">
+ 
+    <!-- Navigation Bar -->
+           <div class="border11 nav_bar w-full h-[80px] flex     justify-between items-center px-[10px] md:px-[20px] border-b-2 border-white">
+            <div class="nav_left w-auto h-[100%] flex justify-center items-center gap-[30px]">
+  
+
+                <div class="logo w-auto h-[100%] flex justify-center items-center"><img src="./photo/Dark_logo.svg" class="logo_nav" alt=""></div>
+
+                <!-- <img src="./photo/light_logo.svg" alt=""> -->
+
+                <div class="nav_link w-auto  hidden h-[100%] md:flex justify-center items-center gap-[35px] text-xl text-[#777E90]">
+                    <div class="">Exchange</div>
+                    <div class="">Buy Crypto</div>
+                    <div class="">Market</div>
+                    <div class="">Discover</div>
+                </div>
+
+            </div>
+
+            <div class="nav_right w-auto h-[100%] flex justify-center items-center gap-[30px] md:gap-[20px]">
+
+                <div class="sign_up w-[80px] hidden lg:block rounded-[50px] text-center p-[6px_10px] bg-[#3772FF] text-white">Sign Up</div>
+                <div class="h11 border12 login w-[80px]  hidden lg:block rounded-[50px] text-white border-2 p-[6px_10px] text-center">Login</div>
+                <div class="dark_light_btn text-3xl text-white"><i class="ri-moon-line h11"></i></div>    
+                
+                <div class="side_menu_icon w-auto h-[100%] text-white text-3xl md:hidden flex justify-center items-center">
+                    <i class="ri-menu-line h11"></i>
+                 </div>
+            </div>
+        </div>
+
+        <!--Side_Navbar-->
+        <div class="side_nav_bar h11 w-full h-auto text-white">
+            <div class="w-full h-auto flex justify-center items-center py-[20px] text-[18px] border-b-2 border-[#777E90]">Exchange</div>
+            <div class="w-full h-auto flex justify-center items-center py-[20px] text-[18px] border-b-2 border-[#777E90]">Buy Crypto</div>
+            <div class="w-full h-auto flex justify-center items-center py-[20px] text-[18px] border-b-2 border-[#777E90]">Market</div>
+            <div class="w-full h-auto flex justify-center items-center py-[20px] text-[18px] border-b-2 border-[#777E90]">Discover</div>
+        </div>
+        <!--Side_Navbar-->
+
+    <!-- Navigation Bar -->
+
+    <!-- Hero Section  -->
+
+    <div class="w-full h-[90vh] sm:h-[50vh] md:h-[40vh] lg:h-[80vh] flex flex-col sm:flex-row">
+        <div class="w-full h-[50%] sm:w-[50%] md:w-[50%] lg:w-[50%] sm:h-[100%]  flex justify-center items-center order-2 sm:order-2">
+        
+            <div class="w-[100%] h-[100%] lg:w-[90%] lg:h-[90%] flex justify-center items-center flex-col  px-[10px] space-y-4 md:space-y-4 lg:space-y-4">
+                <div class="h11 text-4xl sm:text-4xl md:text-4xl lg:text-6xl text-white font-bold">Buy & sell crypto in minutes</div>
+                <div class="text-xl sm:text-xl md:text-xl lg:text-2xl text-[#777E90]">Trade Bitcoin, Ethereum, USDT, and the top altcoins on the legendary crypto asset exchange.</div>
+                <div class="bg-[#3772FF] rounded-[50px] text-white px-[15px] py-[6px]">Get started now</div>
+            </div>
+
+        </div>
+        <div class="w-full h-[50%] sm:w-[50%] md:w-[50%] lg:w-[50%] sm:h-[100%] flex justify-center md:justify-start items-end  order-3 sm:order-3">
+              <img src="./photo/hero_section.svg" class="w-[90%] h-[100%] flex justify-center md:justify-start items-end" alt="">
+        </div>
+      </div>
+
+    <!-- Hero Section  -->
+
+    <!-- Section 1 -->
+     <div class="sec_bg111 w-[80%]  sm:w-[70%] h-auto bg-[#23262F] my-[20px] py-[20px] m-auto flex justify-center rounded-[30px] items-center flex-wrap gap-[20px_30px]">
+          <div class="ca1 w-[200px] h-[180px] my-[10px]  flex justify-center items-center flex-col px-[10px] border-2 border-white rounded-[10px]">
+                 <div class="w-[100%] h-[70px]  flex justify-start items-center"><img src="./photo/sec1.svg" alt=""></div>
+                 <div class="w-[100%] h-[100px] flex justify-center items-start flex-col text-white space-y-1">
+                    <div class="flex justify-start items-center gap-[10px]">
+                        <div class="text-[#777E90]">BTC/USDT</div>
+                        <div class=""><img src="./photo/r1.svg" alt=""></div>
+                    </div>
+                    <div class="h11 text-2xl  text-white font-bold ">36,641.20</div>
+                    <div class="h11 text-white">36,641.20</div>
+                 </div>
+
+          </div>
+          <div class="ca1 w-[200px] h-[180px]  flex justify-center items-center flex-col px-[10px] border-2 border-white rounded-[10px]">
+                 <div class="w-[100%] h-[70px]  flex justify-start items-center"><img src="./photo/sec2.svg" alt=""></div>
+                 <div class="w-[100%] h-[100px] flex justify-center items-start flex-col text-white space-y-1">
+                    <div class="flex justify-start items-center gap-[10px]">
+                        <div class="text-[#777E90]">BTC/USDT</div>
+                        <div class=""><img src="./photo/r2.svg" alt=""></div>
+                    </div>
+                    <div class="h11 text-2xl  text-white font-bold ">36,641.20</div>
+                    <div class="h11 text-white">36,641.20</div>
+                 </div>
+
+          </div>
+          <div class="ca1 w-[200px] h-[180px]  flex justify-center items-center flex-col px-[10px] border-2 border-white rounded-[10px]">
+                 <div class="w-[100%] h-[70px]  flex justify-start items-center"><img src="./photo/sec3.svg" alt=""></div>
+                 <div class="w-[100%] h-[100px] flex justify-center items-start flex-col text-white space-y-1">
+                    <div class="flex justify-start items-center gap-[10px]">
+                        <div class="text-[#777E90]">BTC/USDT</div>
+                        <div class=""><img src="./photo/r3.svg" alt=""></div>
+                    </div>
+                    <div class="h11 text-2xl  text-white font-bold ">36,641.20</div>
+                    <div class="h11 text-white">36,641.20</div>
+                 </div>
+
+          </div>
+          <div class="ca1 w-[200px] h-[180px]  flex justify-center items-center flex-col px-[10px] border-2 border-white rounded-[10px]">
+                 <div class="w-[100%] h-[70px]  flex justify-start items-center"><img src="./photo/sec4.svg" alt=""></div>
+                 <div class="w-[100%] h-[100px] flex justify-center items-start flex-col text-white space-y-1">
+                    <div class="flex justify-start items-center gap-[10px]">
+                        <div class="text-[#777E90]">BTC/USDT</div>
+                        <div class=""><img src="./photo/r4.svg" alt=""></div>
+                    </div>
+                    <div class="h11 text-2xl  text-white font-bold ">36,641.20</div>
+                    <div class="h11 text-white">36,641.20</div>
+                 </div>
+          </div>
+     </div>
+    <!-- Section 1 -->
+
+
+    <!-- Section 2 -->
+     <div class="w-[90%] h-auto  py-[15px] m-auto my-[15px] flex justify-between items-center px-[10px]">
+        <div class="h11 text-3xl sm:text-4xl w-[70%] sm:w-[50%] h-[100%] font-bold text-white flex justify-start items-center">Learn crypto</div>
+        <div class="h11 border12 w-[100px] h-[40px] border-2 border-white text-white flex justify-center items-center rounded-[50px]">View more</div>
+     </div>
+    <!-- Section 2 -->
+
+    <!-- Section 3 -->
+     <div class="w-full h-auto py-[15px] my-[5px] text-[18px] flex justify-center items-center  text-[#777E90] gap-[25px]">
+
+        <div class="bg-[#353945] text-white px-[20px] rounded-[50px]">All</div>
+        <div class="">Bitcoin</div>
+        <div class="">Blockchain</div>
+        <div class="">Tutorial</div>
+
+     </div>
+    <!-- Section 3 -->
+
+    <!-- Section 4 -->
+     <div class="w-full h-auto my-[10px] mb-[15px]  flex justify-center items-center gap-[40px] flex-wrap px-[10px]">
+        <div class="border499 w-[340px] h-[520px] border-2 rounded-[10px]">
+            <div class="img1 w-[100%] h-[350px] flex justify-center items-start"><img src="./photo/img1.svg" class="w-[90%] h-[90%]" alt=""></div>
+            <div class="content w-[100%] h-[150px] flex justify-center items-start flex-col pl-[10px] space-y-1">
+                <div class="w-[100%] label1 flex justify-start items-center gap-[10px] pe-[5px]">
+                    <div class="h11 w-[60%] h-auto text-2xl font-bold text-white">Leveraged Tokens Now Available</div>
+                    <div class="h11 w-[120px] border-2 text-white border-gray-500 rounded-[50px] text-center h-[40px] flex justify-center items-center">Learn more</div>
+                </div>
+                <div class="text-[#777E90] w-[60%] h-auto">Good things come in 3s. Get 3x Leveraged tokens now.</div>
+            </div>
+        </div>
+        <div class="border499 w-[340px] py-[10px] h-[520px] flex justify-between items-center flex-col border-2 rounded-[10px]">
+
+            <div class="w-auto sm:w-[95%] h-[150px]  flex">
+                <div class="w-auto sm:w-[200px] h-[100%]  space-y-1 pl-[7px]">
+                    <div class="h11 text-white font-semibold">Leveraged tokens now available</div>
+                    <div class="text-[#777E90]">Good things come in 3s. Get 3x Leveraged tokens now.</div>
+                    <div class="text-[#777E90] w-full h-auto flex justify-end pr-[10px]">Jun 1, 2021</div>
+                </div>
+                <div class="w-[150px] h-[100%]"><img src="./photo/img2.svg" class="w-[100%] h-[100%]" alt=""></div>
+            </div>
+
+            <div class="border12 w-full  h-[1px] border-[1px]"></div>
+
+            <div class="w-auto sm:w-[95%] h-[150px]  flex">
+                <div class="w-auto sm:w-[200px] h-[100%]  space-y-1 pl-[7px]">
+                    <div class="h11 text-white font-semibold">Leveraged tokens now available</div>
+                    <div class="text-[#777E90]">Good things come in 3s. Get 3x Leveraged tokens now.</div>
+                    <div class="text-[#777E90] w-full h-auto flex justify-end pr-[10px]">Jun 1, 2021</div>
+                </div>
+                <div class="w-[150px] h-[100%]"><img src="./photo/img3.svg" class="w-[100%] h-[100%]" alt=""></div>
+            </div>
+
+            <div class=" border12 w-full  h-[1px] border-[1px]"></div>
+
+            <div class="w-auto sm:w-[95%] h-[150px]  flex">
+                <div class="w-auto sm:w-[200px] h-[100%]  space-y-1 pl-[7px]">
+                    <div class="h11 text-white font-semibold">Leveraged tokens now available</div>
+                    <div class="text-[#777E90]">Good things come in 3s. Get 3x Leveraged tokens now.</div>
+                    <div class="text-[#777E90] w-full h-auto flex justify-end pr-[10px]">Jun 1, 2021</div>
+                </div>
+                <div class="w-[150px] h-[100%]"><img src="./photo/img4.svg" class="w-[100%] h-[100%]" alt=""></div>
+            </div>
+         
+        </div>
+     </div>
+    <!-- Section 4 -->
+
+
+     <!-- Section 5 -->
+     <div class="w-[90%] h-auto  py-[15px] m-auto my-[15px] flex justify-between items-center px-[10px]">
+        <div class="h11 text-3xl sm:text-4xl w-[70%] sm:w-[50%] h-[100%] font-bold text-white flex justify-start items-center">Market trend</div>
+        <div class="h11 border12 w-[100px] h-[40px] border-2 border-white text-white flex justify-center items-center rounded-[50px]">View more</div>
+     </div>
+    <!-- Section 5 -->
+
+    <!-- Section 6 -->
+     <div class="w-full h-auto py-[15px] my-[5px] text-[18px] flex justify-center items-center flex-wrap  px-[30px] text-[#777E90] gap-[25px]">
+
+        <div class="bg-[#353945] text-white px-[20px] rounded-[50px]">All</div>
+        <div class="">DeFi</div>
+        <div class="">Innovation</div>
+        <div class="">POS</div>
+        <div class="">NFT</div>
+        <div class="">POW</div>
+        <div class="">Storage</div>
+
+     </div>
+    <!-- Section 6 -->
+
+    <!-- Section 7 -->
+     <div class="w-full h-auto py-[20px] flex justify-center items-center gap-[30px] flex-wrap px-[20px]">
+
+       <div class="border499 w-[210px] h-[250px]  border-2 border-white rounded-[20px] pl-[20px] py-[10px] flex justify-center items-start flex-col space-y-2">
+        <div class=""><img src="./photo/c1.svg" alt=""></div>
+        <div class="flex justify-start items-center gap-[10px]">
+            <div class="h11 text-xl font-bold text-white">Bitcoin</div>
+            <div class="text-[#B1B5C3]">BTC</div>
+        </div>
+        <div class="h11 text-xl font-bold text-white">$36,201.34</div>
+        <div class="text-[#58BD7D]">+1.71%</div>
+        <div class=""><img src="./photo/char1.svg" class="w-[100%] h-[100%]" alt=""></div>
+        <div class="h11 w-[80px] border-2 border-gray-500 rounded-[50px] flex justify-center items-center h-[30px] text-white">Trade</div>
+       </div>
+
+
+       <div class="border499 w-[210px] h-[250px]  border-2 border-white rounded-[20px] pl-[20px] py-[10px] flex justify-center items-start flex-col space-y-2">
+        <div class=""><img src="./photo/c2.svg" alt=""></div>
+        <div class="flex justify-start items-center gap-[10px]">
+            <div class="h11 text-xl font-bold text-white">Ethereum</div>
+            <div class="text-[#B1B5C3]">ETH</div>
+        </div>
+        <div class="h11 text-xl font-bold text-white">$2,605.95</div>
+        <div class="text-[#58BD7D]">+2.04%</div>
+        <div class=""><img src="./photo/char2.svg" class="w-[100%] h-[100%]" alt=""></div>
+        <div class="h11 w-[80px] border-2 border-gray-500 rounded-[50px] flex justify-center items-center h-[30px] text-white">Trade</div>
+       </div>
+
+
+       <div class="border499 w-[210px] h-[250px]  border-2 border-white rounded-[20px] pl-[20px] py-[10px] flex justify-center items-start flex-col space-y-2">
+        <div class=""><img src="./photo/c3.svg" alt=""></div>
+        <div class="flex justify-start items-center gap-[10px]">
+            <div class="h11 text-xl font-bold text-white">Bitcoin Cash</div>
+            <div class="text-[#B1B5C3]">BCH</div>
+        </div>
+        <div class="h11 text-xl font-bold text-white">$939.20</div>
+        <div class="text-[#58BD7D]">-0.74%</div>
+        <div class=""><img src="./photo/char3.svg" class="w-[100%] h-[100%]" alt=""></div>
+        <div class="h11 w-[80px] border-2 border-gray-500 rounded-[50px] flex justify-center items-center h-[30px] text-white">Trade</div>
+       </div>
+
+
+       <div class="border499 w-[210px] h-[250px]  border-2 border-white rounded-[20px] pl-[20px] py-[10px] flex justify-center items-start flex-col space-y-2">
+        <div class=""><img src="./photo/c4.svg" alt=""></div>
+        <div class="flex justify-start items-center gap-[10px]">
+            <div class="h11 text-xl font-bold text-white">Ripple</div>
+            <div class="text-[#B1B5C3]">XRP</div>
+        </div>
+        <div class="h11 text-xl font-bold text-white">$1.02</div>
+        <div class="text-[#58BD7D]">+1.20%</div>
+        <div class=""><img src="./photo/char4.svg" class="w-[100%] h-[100%]" alt=""></div>
+        <div class="h11 w-[80px] border-2 border-gray-500 rounded-[50px] flex justify-center items-center h-[30px] text-white">Trade</div>
+       </div>
+     
+       <div class="border499 w-[210px] h-[250px]  border-2 border-white rounded-[20px] pl-[20px] py-[10px] flex justify-center items-start flex-col space-y-2">
+        <div class=""><img src="./photo/c5.svg" alt=""></div>
+        <div class="flex justify-start items-center gap-[10px]">
+            <div class="h11 text-xl font-bold text-white">Chainlink</div>
+            <div class="text-[#B1B5C3]">LINK</div>
+        </div>
+        <div class="h11 text-xl font-bold text-white">$30.56</div>
+        <div class="text-[#58BD7D]">-3.84%</div>
+        <div class=""><img src="./photo/char5.svg" class="w-[100%] h-[100%]" alt=""></div>
+        <div class="h11 w-[80px] border-2 border-gray-500 rounded-[50px] flex justify-center items-center h-[30px] text-white">Trade</div>
+       </div>
+     </div>
+    <!-- Section 7 -->
+
+    <!-- Section 8 -->
+     <div class="w-full h-auto py-[10px] my-[10px] flex justify-center items-center flex-col gap-[10px] px-[30px]">
+        <div class="h11 text-white w-full text-4xl font-bold text-center  sm:w-[50%] md:w-[50%] lg:w-[40%] flex justify-center items-center">Become a crypto trader in seconds</div>
+        <div class="text-[#777E90] text-center text-xl">We've got everything you need to start trading.</div>
+     </div>
+    <!-- Section 8 -->
+
+
+    <!-- Section 9 -->
+     <div class="sec_bg111 w-full h-auto py-[10px] bg-[#18191D] my-[15px]  flex justify-center items-center gap-[30px] flex-wrap">
+
+        <div class="sec_color111 w-[280px] h-[310px] bg-[#23262F] rounded-[20px] flex justify-center items-start flex-col px-[10px]">
+            <div class="w-full h-[130px]  flex justify-center items-center"><img src="./photo/card01.svg" alt=""></div>
+            <div class="w-full h-[160px] space-y-2">
+                <div class="h11 text-white text-2xl font-bold text-center">Buy & Sell Crypto</div>
+                <div class="text-[#777E90] text-center">We realize ideas from simple to complex, everything becomes easy to use and reach the most potential customers.</div>
+            </div>
+        </div>
+        <div class="sec_color111 w-[280px] h-[310px] bg-[#23262F] rounded-[20px] flex justify-center items-start flex-col px-[10px]">
+            <div class="w-full h-[130px]  flex justify-center items-center"><img src="./photo/card02.svg" alt=""></div>
+            <div class="w-full h-[160px] space-y-2">
+                <div class="h11 text-white text-2xl font-bold text-center">Trade Assets</div>
+                <div class="text-[#777E90] text-center">We realize ideas from simple to complex, everything becomes easy to use and reach the most potential customers.</div>
+            </div>
+        </div>
+        <div class="sec_color111 w-[280px] h-[310px] bg-[#23262F] rounded-[20px] flex justify-center items-start flex-col px-[10px]">
+            <div class="w-full h-[130px]  flex justify-center items-center"><img src="./photo/card03.svg" alt=""></div>
+            <div class="w-full h-[160px] space-y-2">
+                <div class="h11 text-white text-2xl font-bold text-center">Earn Rewards for Trading</div>
+                <div class="text-[#777E90] text-center">We realize ideas from simple to complex, everything becomes easy to use and reach the most potential customers.</div>
+            </div>
+        </div>
+     </div>
+    <!-- Section 9 -->
+
+    <!-- Section 10 -->
+     <div class="w-full h-auto py-[10px] my-[10px]  flex justify-center items-center text-white">
+        <div class="w-[130px] h-[40px] rounded-[50px] flex justify-center items-center bg-[#3772FF]">Contact Us</div>
+     </div>
+    <!-- Section 10 -->
+
+    <!-- Section 11 -->
+     <div class="sec_bg111 w-full h-auto  bg-[#18191D] flex justify-center flex-wrap items-center gap-[0px_20px] my-[20px]">
+        <div class="w-[310px] h-[400px]  py-[20px] px-[10px] space-y-3">
+            <div class="h11 text-white text-4xl font-bold">Trade anywhere</div>
+            <div class="text-[#777E90] text-xl">Anytime, anywhere. Trade crypto on your terms.</div>
+
+            <div class="w-full h-auto  space-y-2">
+
+                <div class="flex justify-start items-center gap-[15px] pb-[15px] border-b-2 border-[#777E90] pt-[5px]">
+                    <div class=""><img src="./photo/f1.svg" class="w-[45px] h-[45px]" alt=""></div>
+                    <div class="">
+                        <div class="text-[#777E90]">Download from</div>
+                        <div class="h11 text-2xl font-bold text-white">Appstore</div>
+                    </div>
+                </div>
+
+
+                <div class="flex justify-start items-center gap-[15px] pb-[15px] border-b-2 border-[#777E90] pt-[5px]">
+                    <div class=""><img src="./photo/f2.svg" class="w-[45px] h-[45px]" alt=""></div>
+                    <div class="">
+                        <div class="text-[#777E90]">Download from</div>
+                        <div class="h11 text-2xl font-bold text-white">Google Play</div>
+                    </div>
+                </div>
+
+
+                <div class="flex justify-start items-center gap-[15px] pb-[15px] pt-[5px]">
+                    <div class=""><img src="./photo/f3.svg" class="w-[45px] h-[45px]" alt=""></div>
+                    <div class="">
+                        <div class="text-[#777E90]">Download from</div>
+                        <div class="h11 text-2xl font-bold text-white">Mac OS</div>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+        <div class="w-[310px] h-auto flex justify-center items-center"><img src="./photo/section10.svg" alt=""></div>
+     </div>
+    <!-- Section 11 -->
+
+    <!-- Section 12 -->
+    <div class="w-full h-auto py-[10px] my-[10px] flex justify-center items-center flex-col gap-[10px] px-[30px]">
+        <div class=""><img src="./photo/Dark1_logo.svg" class="logo_nav" alt=""></div>
+        <div class="h11  text-white text-3xl sm:text-4xl font-bold text-center w-[98%]  sm:w-[80%] md:w-[85%] lg:w-[50%] flex justify-center items-center">Stay in the know on crypto with BitCloud</div>
+        <div class="text-[#777E90] text-center text-xl">A creative agency that lead and inspire</div>
+     </div>
+    <!-- Section 12 -->
+
+
+    <!-- Section 13 -->
+     <div class="sec_bg111 w-full h-auto  bg-[#23262F] my-[20px] flex justify-center items-center gap-[0px_30px] flex-wrap">
+
+         <div class="w-[300px] h-[280px]  px-[10px] flex flex-col justify-center items-start gap-[10px]">
+
+            <div class="text-xl font-bold text-[#777E90]">CRYPTO NEWS</div>
+            <div class="h11 text-3xl text-white">Be Part of our Global Community</div>
+            <div class="text-[17px] text-[#777E90]">Let’s stay in touch. Join our communities to keep up with the BitCloud team and our traders from across the world.</div>
+            <div class="h11 w-[100px] h-[35px] rounded-[30px] border-2 border-[#777E90] text-white flex justify-center items-center">Join now</div>
+
+         </div>
+
+
+         <div class="w-[300px] h-[280px] flex justify-center items-center px-[10px]"><img src="./photo/section13.svg" alt=""></div>
+
+     </div>
+    <!-- Section 13 -->
+
+    <!-- Section 14 -->
+    <div class="w-full h-auto py-[10px] my-[10px] flex justify-center items-center flex-col gap-[10px] px-[30px]">
+        <div class="h11 text-white w-full text-4xl font-bold text-center  sm:w-[50%] md:w-[50%] lg:w-[40%] flex justify-center items-center">How it work</div>
+        <div class="text-[#777E90] text-center text-xl">Stacks is a production-ready library of stackable content blocks built in React Native.</div>
+     </div>
+    <!-- Section 14 -->
+
+    <!-- Section 15 -->
+     <div class="sec_bg111 w-full bg-[#23262F] h-auto my-[15px] flex justify-center items-center gap-[25px_30px] flex-wrap px-[15px]">
+
+        <div class="w-[230px] h-[210px]  px-[10px]">
+            <div class="w-full h-auto flex justify-center items-center"><img src="./photo/coll1.svg" alt=""></div>
+            <div class="">
+                <div class="h11 text-center text-[20px] font-bold text-white">Download</div>
+                <div class="text-center text-[#777E90]">Stacks is a production-ready library of stackable content blocks built in React Native.</div>
+            </div>
+        </div>
+        <div class="w-[230px] h-[210px]  px-[10px]">
+            <div class="w-full h-auto flex justify-center items-center"><img src="./photo/coll2.svg" alt=""></div>
+            <div class="">
+                <div class="h11 text-center text-[20px] font-bold text-white">Connect wallet</div>
+                <div class="text-center text-[#777E90]">Stacks is a production-ready library of stackable content blocks built in React Native.</div>
+            </div>
+        </div>
+        <div class="w-[230px] h-[210px]  px-[10px]">
+            <div class="w-full h-auto flex justify-center items-center"><img src="./photo/coll3.svg" alt=""></div>
+            <div class="">
+                <div class="h11 text-center text-[20px] font-bold text-white">Start trading</div>
+                <div class="text-center text-[#777E90]">Stacks is a production-ready library of stackable content blocks built in React Native.</div>
+            </div>
+        </div>
+        <div class="w-[230px] h-[210px]  px-[10px]">
+            <div class="w-full h-auto flex justify-center items-center"><img src="./photo/coll4.svg" alt=""></div>
+            <div class="">
+                <div class="h11 text-center text-[20px] font-bold text-white">Earn money</div>
+                <div class="text-center text-[#777E90]">Stacks is a production-ready library of stackable content blocks built in React Native.</div>
+            </div>
+        </div>
+
+     </div>
+    <!-- Section 15 -->
+
+    <!-- Section 16 -->
+     <div class="w-full h-auto flex justify-center items-center gap-[0px_20px] flex-wrap my-[30px]">
+        
+        <div class="w-[300px] h-[215px] text-xl text-[#777E90] space-y-1 px-[10px]">
+            <div class=""><img src="./photo/Dark1_logo.svg" class="logo_nav" alt=""></div>
+           <div class="h11 text-2xl font-bold text-white">About</div>
+           <div class="">Projects</div>
+           <div class="">What We Do</div>
+           <div class="">Press</div>
+           <div class="">Jobs</div>
+        </div>
+
+        <div class="w-[300px] h-[215px] text-xl text-[#777E90] space-y-1 px-[10px]">
+           <div class="h11 text-2xl font-bold text-white">Contact</div>
+           <div class="">43252 Borer Mountains</div>
+           <div class="">Zackerychester</div>
+           <div class="">Bahamas</div>
+           <div class="">732-528-4945</div>
+        </div>
+
+        <div class="w-[300px] h-[215px] text-xl text-[#777E90] space-y-1 px-[10px]">
+           <div class="h11 text-2xl font-bold text-white">Newsletter</div>
+           <div class="">Subscribe our newsletter to get</div>
+           <div class="">more free design course and</div>
+           <div class="">resource</div>
+
+           <div class="flex justify-between items-center w-full h-[40px] px-[10px] border-2 border-[#777E90] rounded-[20px] placeholder:text-[#777E90]">
+            <div class="w-[80%] h-[80%]"><input type="text" class="w-[100%] h-[100%] bg-transparent placeholder:text-[17px] pl-[15px]" placeholder="Enter your email"></div>
+            <div class="w-[12%] h-[80%]"><img src="./photo/Small.svg" alt=""></div>
+           </div>
+        
+        </div>
+        
+
+
+     </div>
+    <!-- Section 16 -->
+</body>
+<script>
+    jQuery.noConflict();
+    jQuery(document).ready(function($){
+
+        $(".ri-moon-line").click(function(){
+            $(".ri-moon-line").toggleClass("ri-sun-line");
+             $("body").toggleClass("body");
+             $(".h11").toggleClass("h111");
+             $(".border11").toggleClass("border111");
+             $(".border12").toggleClass("border112");
+             $(".border499").toggleClass("border500");
+             $(".sec11").toggleClass("sec111");
+             $(".sec_bg111").toggleClass("sec_bg11");
+             $(".sec_color111").toggleClass("sec_color11");
+
+             
+
+            //  Logo Img
+            let img1=$(".logo_nav").attr("src");
+            
+            if(img1 == "./photo/Dark_logo.svg"){
+                $(".logo_nav").attr("src","./photo/light_logo.svg");  
+            }else{
+                $(".logo_nav").attr("src","./photo/Dark_logo.svg");     
+            }
+            //  Logo Img
+        })
+        
+        $(".side_nav_bar").hide();
+
+        $(".ri-menu-line").click(function(){
+          $(".side_nav_bar").slideToggle(300)   
+        })
+
+    })
+</script>
+</html>
